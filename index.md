@@ -29,18 +29,18 @@ On a newly curated dataset featuring challenging compositional alignment scenari
 
 ## Background 
 x
-![Background](/static/image/background.png)
+![Background](/static/image/backgrounds.png)
 *Figure 1: Fundamental difference between previous methods and our approach.*
 
 ## Our Method
 x
-![Method](/static/image/method.jpeg)
+![Method](/static/image/methods.jpeg)
 *Figure 2: LOTS methodology.*
 
 ## Our Contributions
 x
 
-![Performance Comparision](/static/image/result.jpeg)
+![Performance Comparision](/static/image/results.jpeg)
 *Figure 3: Comparision between different T2I generative models.*
 
 ## Relevant Works
