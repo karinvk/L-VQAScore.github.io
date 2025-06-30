@@ -27,21 +27,22 @@ On a newly curated dataset featuring challenging compositional alignment scenari
 
 ---
 
-## Background 
+## Attribute Confusion Problem
 x
-![Background](/static/image/backgrounds.png)
-*Figure 1: Fundamental difference between previous methods and our approach.*
 
-## Our Method
+## Our Approach
 x
 ![Method](/static/image/methods.jpeg)
-*Figure 2: LOTS methodology.*
+*Figure 1: L-VQAScore methodology.*
 
 ## Our Contributions
-x
+- We investigate and validate the overlooked attribute confusion problem in T2I evaluation with a carefully designed evaluation data covering both automated metrics and human evaluation.
+- We demonstrate that visual localization and attribute-centric VQA are effective strategies in addressing attribute confusion evaluation.
+- We propose a new human evaluation protocol and an automated T2I evaluation method L-VQAScore, leveraging both reflection and leakage questions on localized visual content.
+- L-VQAScore effectively mitigates the attribute confusion in T2I evaluation, achieving improved correlation with human annotations compared to state-of-the-art metrics.
 
 ![Performance Comparision](/static/image/results.jpeg)
-*Figure 3: Comparision between different T2I generative models.*
+*Figure 3: Comparision between different T2I evaluation approaches.*
 
 ## Relevant Works
 x
