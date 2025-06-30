@@ -29,13 +29,19 @@ To validate our method, we build on Fashionpedia to release Sketchy, the first f
 ---
 
 ## Background 
-x
+Fashion design is a complex creative process that blends visual and textual expressions. Sketches and natural language descriptions associated with the same garment convey complementary information for depicting the final design. As a complete outlook design is composed of several clothing garments, multiple natural descriptions are often collected together to outline an outfit. Each description specifies a localized part of design, in terms of silhouette shapes, materials, and textual details, allowing fine-grained localized control over the generation.
+Our method is designed to enable fashion image generation with an unprecedented level of control. LOTS represents the natural
+evolution of fashion design methodologies, progressing from global text and sketches (IP-Adapter) to localized sketches with global
+text (Multi-T2I). Our approach leverages a global description (omitted here for brevity) alongside a set of localized sketch-text pairs
+(the coloured boxes), effectively defining both the layout and appearance of individual garment items.
+![Background](/static/image/background.jpeg)
+*Figure 1: Fundamental difference between previous methods and our approach.*
 
 ## Our Method
 We propose LOTS, a novel approach leveraging multiple localized sketch-text pairs for image conditioning. First, the \textit{Modularized Pair-Centric Representation} module independently encodes sketches and text into a shared latent space, preserving localized features while limiting information leakage between pairs to reduce attribute confusion. Then, the \textit{Pair-former} merges text and sketch information within each pair ensuring spatially grounded descriptions that capture single-item attributes through the structural guidance of sketches.
 Next, during the \textit{Diffusion Pair Guidance} phase, these localized representations serve as conditioning inputs to a pre-trained diffusion model, alongside a global textual representation specifying general appearance properties (style, background). Unlike prior methods that merge conditioning inputs upfront, our approach defers this operation to the diffusion process itself, breaking down the task across multiple denoising steps via a cross-attention strategy. 
 ![Method](/static/image/method.jpeg)
-
+*Figure 2: LOTS methodology.*
 
 ## Our Contributions
 - We focus on localized sketch-text image generation, advancing state-of-the-art conditioning with localized sketches and a single global text. 
@@ -44,7 +50,7 @@ Next, during the \textit{Diffusion Pair Guidance} phase, these localized represe
 - LOTS achieves state-of-the-art performance in image quality, sketch-text conditioning and attribute localization, as measured with both metrics and human evaluation.
 
 ![Performance Comparision](/static/image/performance.jpeg)
-*Figure 1: Performance Comparision between different T2I generative models.*
+*Figure 3: Performance Comparision between different T2I generative models.*
 
 ## Relevant Works
 x
