@@ -38,8 +38,9 @@ text (Multi-T2I). Our approach leverages a global description (omitted here for 
 *Figure 1: Fundamental difference between previous methods and our approach.*
 
 ## Our Method
-We propose LOTS, a novel approach leveraging multiple localized sketch-text pairs for image conditioning. First, the \textit{Modularized Pair-Centric Representation} module independently encodes sketches and text into a shared latent space, preserving localized features while limiting information leakage between pairs to reduce attribute confusion. Then, the \textit{Pair-former} merges text and sketch information within each pair ensuring spatially grounded descriptions that capture single-item attributes through the structural guidance of sketches.
-Next, during the \textit{Diffusion Pair Guidance} phase, these localized representations serve as conditioning inputs to a pre-trained diffusion model, alongside a global textual representation specifying general appearance properties (style, background). Unlike prior methods that merge conditioning inputs upfront, our approach defers this operation to the diffusion process itself, breaking down the task across multiple denoising steps via a cross-attention strategy. 
+We propose LOTS, a novel approach leveraging multiple localized sketch-text pairs for image conditioning. 
+First, the Modularized Pair-Centric Representation module independently encodes sketches and text into a shared latent space, preserving localized features while limiting information leakage between pairs to reduce attribute confusion. Then, the Pair-former merges text and sketch information within each pair ensuring spatially grounded descriptions that capture single-item attributes through the structural guidance of sketches.
+Next, during the Diffusion Pair Guidance phase, these localized representations serve as conditioning inputs to a pre-trained diffusion model, alongside a global textual representation specifying general appearance properties (style, background). Unlike prior methods that merge conditioning inputs upfront, our approach defers this operation to the diffusion process itself, breaking down the task across multiple denoising steps via a cross-attention strategy. 
 ![Method](/static/image/method.jpeg)
 *Figure 2: LOTS methodology.*
 
