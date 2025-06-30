@@ -34,7 +34,7 @@ Our method is designed to enable fashion image generation with an unprecedented 
 evolution of fashion design methodologies, progressing from global text and sketches (IP-Adapter) to localized sketches with global
 text (Multi-T2I). Our approach leverages a global description (omitted here for brevity) alongside a set of localized sketch-text pairs
 (the coloured boxes), effectively defining both the layout and appearance of individual garment items.
-![Background](/static/image/background.jpeg)
+![Background](/static/image/background.png)
 *Figure 1: Fundamental difference between previous methods and our approach.*
 
 ## Our Method
@@ -49,8 +49,8 @@ Next, during the \textit{Diffusion Pair Guidance} phase, these localized represe
 - We introduce a new dataset, Sketchy, in the fashion domain, to facilitate model training and evaluation for the localized text-sketch image generation problem.
 - LOTS achieves state-of-the-art performance in image quality, sketch-text conditioning and attribute localization, as measured with both metrics and human evaluation.
 
-![Performance Comparision](/static/image/performance.jpeg)
-*Figure 3: Performance Comparision between different T2I generative models.*
+![Performance Comparision](/static/image/result.jpeg)
+*Figure 3: Comparision between different T2I generative models.*
 
 ## Relevant Works
 x
