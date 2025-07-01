@@ -32,7 +32,8 @@ x
 
 ## Our Approach
 The pipeline of the proposed L-VQAScore in measuring the alignment between the conditioning prompt and the generated image is shown as below. We represent the conditioning text into structured entity-attribute pairs. L-VQAScore localizes regions of interest leveraging entity categories via a semantic segmentation module. Then reflection and leakage questions are composed to evaluate the presence of desired and leaked attributes in the localized regions, accounting for both attribute depiction and localization.
-![Method](/static/image/methods.jpeg)
+![Method1](/static/image/method_1.png)
+![Method2](/static/image/method_1.png)
 *Figure 1: L-VQAScore methodology. *
 
 ## Key Contributions
@@ -41,7 +42,7 @@ The pipeline of the proposed L-VQAScore in measuring the alignment between the c
 - We propose a new human evaluation protocol and an automated T2I evaluation method L-VQAScore, leveraging both reflection and leakage questions on localized visual content.
 - L-VQAScore effectively mitigates the attribute confusion in T2I evaluation, achieving improved correlation with human annotations compared to state-of-the-art metrics.
 
-![Performance Comparision](/static/image/results.jpeg)
+![Performance Comparision](/static/image/results.png)
 *Figure 3: Performance in T2I alignment regarding the localized study F1 Score, Precision and Recall. L-VQAScore consistently surpasses existing state-of-the-art methods.*
 
 ## Relevant Works
