@@ -28,12 +28,14 @@ On a newly curated dataset featuring challenging compositional alignment scenari
 ---
 
 ## Attribute Confusion Problem
-x
+Attribute confusion occurs when a visuo-textual model misassigns attributes to irrelevant regions within an image, resulting in semantically inaccurate results. Note that the while the attribute confusion problem impacts T2I generative models, its automated evaluation requires metrics effectively recognizing correct entity-attribute associations.
+We examined how state-of-the-art T2I evaluation metrics handle attribute confusion in the paper. As revealed in recent work, VLMs exhibit behaviors akin to bag-of-words models in cross-modal understanding. Thus, they are limited in evaluating compositional semantics with complex entity-attribute bindings, which can be very critical for T2I in domains like fashion. Recent VQA-based metrics have enhanced the evaluation of entity-attribute binding by checking whether each attribute is correctly reflected on its corresponding entity. However, as highlighted by our preliminary evaluation, existing T2I metrics struggle to recognize attribute confusion cases, in other words, when the attributes are reflected on the wrong entities
+Thus, we propose an improved human evaluation protocol and an automatic T2I evaluation method in assessing complex prompts with fine-grained semantics. Particularly, we focus on measuring attribute confusion: when a model generates correct entities/attributes, but they are associated incorrectly.
 
 ## Our Approach
-The pipeline of the proposed L-VQAScore in measuring the alignment between the conditioning prompt and the generated image is shown as below. We represent the conditioning text into structured entity-attribute pairs. L-VQAScore localizes regions of interest leveraging entity categories via a semantic segmentation module. Then reflection and leakage questions are composed to evaluate the presence of desired and leaked attributes in the localized regions, accounting for both attribute depiction and localization.
+To measure the alignment between the conditioning prompt and the generated image, we represent the conditioning text into structured entity-attribute pairs. L-VQAScore localizes regions of interest leveraging entity categories via a semantic segmentation module. Then reflection and leakage questions are composed to evaluate the presence of desired and leaked attributes in the localized regions, accounting for both attribute depiction and localization.
 ![Method1](/static/image/method_1.png)
-![Method2](/static/image/method_1.png)
+![Method2](/static/image/method_2.png)
 *Figure 1: L-VQAScore methodology. *
 
 ## Key Contributions
