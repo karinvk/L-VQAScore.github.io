@@ -45,6 +45,7 @@ To measure the alignment between the conditioning prompt and the generated image
 - L-VQAScore effectively mitigates the attribute confusion in T2I evaluation, achieving improved correlation with human annotations compared to state-of-the-art metrics.
 
 ![Performance Comparision](/static/image/results.png)
+
 *Figure 3: Performance in T2I alignment regarding the localized study F1 Score, Precision and Recall. L-VQAScore consistently surpasses existing state-of-the-art methods.*
 
 ## Relevant Works
