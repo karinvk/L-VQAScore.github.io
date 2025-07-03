@@ -27,7 +27,7 @@ On a newly curated dataset featuring challenging compositional alignment scenari
 
 ---
 
-## Attribute Confusion Problem
+## The Attribute Confusion Problem
 Attribute confusion occurs when a visuo-textual model misassigns attributes to irrelevant regions within an image, resulting in semantically inaccurate results. While the attribute confusion problem impacts T2I generative models, its automated evaluation requires metrics effectively recognizing correct entity-attribute associations - this is underexplored.
 
 We examined how state-of-the-art T2I evaluation metrics handle attribute confusion in the paper. As revealed in recent work, VLMs exhibit behaviors akin to bag-of-words models in cross-modal understanding. Thus, they are limited in evaluating compositional semantics with complex entity-attribute bindings, which can be very critical for T2I in domains like fashion. Recent VQA-based metrics have enhanced the evaluation of entity-attribute binding by checking whether each attribute is correctly reflected on its corresponding entity. However, as highlighted by our preliminary evaluation, existing T2I metrics struggle to recognize attribute confusion cases, in other words, when the attributes are reflected on the wrong entities. 
